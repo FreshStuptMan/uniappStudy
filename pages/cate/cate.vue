@@ -1,5 +1,6 @@
 <template>
 	<view>
+		<my-search></my-search>
 		<view class="scroll-view-container">
 			<scroll-view class="left-scroll-view" scroll-y="true" :style="{height: windowHeight + 'px'}">
 				<view @click="activeCateChange(index)" :class="['left-scroll-item', index === active ? 'active' : '']" v-for="(cate, index) in cateList" :key="cate.cat_id">{{cate.cat_name}}</view>
@@ -54,7 +55,7 @@
 		},
 		created () {
 			// 获取设备信息 => 获取可用窗口高度
-			this.windowHeight = uni.getSystemInfoSync().windowHeight
+			this.windowHeight = uni.getSystemInfoSync().windowHeight - 30
 			this.getCateList()
 		}
 	}
