@@ -17,6 +17,18 @@
             "style" : {}
         }
     ],
+	"subPackages": [{
+		"root": "subpackages",
+		"pages": [{
+                    "path" : "good_detail/good_detail",
+                    "style" : {}
+                }
+                ,{
+                    "path" : "goods_list/goods_list",
+                    "style" : {}
+                }
+            ]
+	}],
 	"tabBar": {
 		"selectedColor": "#C00000",
 		"list": [{
@@ -44,7 +56,7 @@
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "生活优选",
-		"navigationBarBackgroundColor": "#007AFF",
+		"navigationBarBackgroundColor": "#C00000",
 		"backgroundColor": "#FFFFFF"
 	}
 }
