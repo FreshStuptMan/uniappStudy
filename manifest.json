@@ -45,6 +45,7 @@
         "appid" : "wx51f735bdaa8c2e75",
         "setting" : {
             "urlCheck" : true
-        }
+        },
+		"requiredPrivateInfos":["chooseAddress"]
     }
 }
